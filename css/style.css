@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.popup {
+    width: 350px;
+}
+
+.popup :where(.picker, header, .all-colors, .color) {
+    display: flex;
+}
+
+.popup .picker {
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #e3f2fd;
+}
+
+.picker #color-picker {
+    outline: none;
+    border: none;
+    background: #5372f0;    
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.picked-colors {
+    margin: 10px 15px;
+}
+
+.picked-colors.hide {
+    display: none;
+}
+
+.picked-colors header {
+    justify-content: space-between;
+}
+
+.picked-colors .clear-all {
+    color: #5372f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.all-colors {
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.all-colors .color {
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+}
+
+.all-colors .color .rect {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+.all-colors .color .value {
+    font-size: 0.96rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}

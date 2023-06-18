@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Color Picker",
+    "description": "A typical color picker that provides users with visual representation of colors, enabling users to select colors from web pages, images, or custom color palettes.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "64": "images/icon64.png",
+        "128": "images/icon128.png",
+        "256": "images/icon256.png",
+        "512": "images/icon512.png"
+    }
+}
