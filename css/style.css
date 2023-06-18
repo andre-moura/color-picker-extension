@@ -28,13 +28,23 @@ html, body {
 .popup .picker {
     justify-content: center;
     padding: 30px 0;
-    background-color: #e3f2fd;
+    background: linear-gradient(to right,
+        #e6dede,
+        #e6c0de,
+        #dcbde1,
+        #bfb8e6,
+        #9db5ea,
+        #7ab2ef,
+        #57aef3,
+        #35abf7,
+        #12a8fb
+    );
 }
 
 .picker #color-picker {
     outline: none;
     border: none;
-    background: #5372f0;    
+    background: #202124;    
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
