@@ -53,6 +53,11 @@ const clearAllColors = () => {
     pickedColors.length = 0;
     localStorage.setItem('picked-colors', JSON.stringify(pickedColors));
     document.querySelector('.picked-colors').classList.add('hide');
+    const popupContainer = document.querySelector(".popup");
+    const body = document.querySelector("body");
+
+    popupContainer.style.width = `${body.offsetWidth}px`;
+    popupContainer.style.height = `${body.offsetHeight}px`;
     showColors();
 }
 
